@@ -1,4 +1,5 @@
 # build
+you need the [base docker image](../ubuntu-18.04/README.md), then run
 ```
 docker build --force-rm -t stephan.praetsch:ubuntu-with-oracle-java .
 ```
