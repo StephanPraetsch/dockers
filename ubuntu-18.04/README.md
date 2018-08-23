@@ -1,12 +1,11 @@
 # build
 ```
-docker build --force-rm -t ubuntu-18.04 .
+docker build --force-rm -t stephan.praetsch:ubuntu-18.04 .
 ```
 
 # run with interactive bash
 ```
-> docker images | grep ubuntu-18.04
-ubuntu-18.04                                                      latest              5a8677304d3d        About a minute ago   513MB
-> docker run -it 5a8677304d3d /bin/bash
+> docker images | grep stephan.praetsch | grep ubuntu-18.04
+stephan.praetsch    ubuntu-18.04        2c6c592ce892        3 minutes ago       513MB
+> docker run -it 2c6c592ce892 /bin/bash
 ```
-

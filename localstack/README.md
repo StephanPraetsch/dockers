@@ -1,12 +1,11 @@
 # build
 ```
-docker build --force-rm -t ubuntu-with-localstack .
+docker build --force-rm -t stephan.praetsch:ubuntu-with-localstack .
 ```
 
 # run with interactive bash
 ```
-> docker images | grep ubuntu-with-localstack
-ubuntu-with-localstack                                            latest              b211fb6552eb        57 seconds ago      1.07GB
-> docker run -it b211fb6552eb /bin/bash
+> docker images | grep stephan.praetsch | grep ubuntu-with-localstack
+stephan.praetsch    ubuntu-with-localstack   da4a12ea46e4        About a minute ago   1.52GB
+> docker run -it da4a12ea46e4 /bin/bash
 ```
-

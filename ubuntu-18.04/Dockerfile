@@ -10,4 +10,3 @@ RUN apt-get install -y locales && locale-gen de_DE.UTF-8
 ENV LC_ALL=de_DE.UTF-8
  
 WORKDIR /tmp
-
