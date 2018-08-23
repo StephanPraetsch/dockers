@@ -23,3 +23,5 @@ RUN apt-get install -y python
 RUN apt-get install -y python-pip python-dev build-essential
 RUN apt-get install -y npm
 
+# install localstack
+RUN pip install localstack
