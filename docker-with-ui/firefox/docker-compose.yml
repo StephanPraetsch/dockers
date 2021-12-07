@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  firefox:
+    image: firefox-in-docker:latest
+    build: .
+    environment:
+      - DISPLAY=${DISPLAY}
+      - PULSE_SERVER=unix:/run/user/1000/pulse/native
+    privileged: true
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /run/user/1000/pulse/native:/run/user/1000/pulse/native
+      - /tmp/tmp-firefox-in-docker:/tmp
+      - ~/Downloads:/home/firefox/Downloads
+    network_mode: host
